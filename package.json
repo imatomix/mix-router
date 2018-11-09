@@ -1,0 +1,20 @@
+{
+  "name": "mix-router",
+  "version": "0.0.1",
+  "description": "Simple router for mixer https://github.com/imatomix/mixer",
+  "main": "./lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "router",
+    "route",
+    "mixer",
+    "mix"
+  ],
+  "author": "Keita Imatomi",
+  "license": "MIT"
+}
