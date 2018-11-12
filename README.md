@@ -24,7 +24,7 @@ app.mix(
 ```
 
 ### methods
-```http.METHODS``` 分あるけど、代表的なのは以下の通り。ただし、```get()``` は自動的に ```HEAD``` も受け取るようにしている。
+```http.METHODS``` 分あるけど、代表的なのは以下の通り。ただし、```get()``` は自動的に ```HEAD``` も受け取るようにしている。
 
 ```js
 get('/route', (req, res) => {})
@@ -71,7 +71,7 @@ app.mix(
 
 ## req.params
 
-ルートティング内に```:```で始まるワードを用いた場合は、そのワードをキーとして、リクエスト時のワードを値に、```req.params```に追加される。
+ルートティング内に```:```で始まるワードを用いた場合は、そのワードをキーとして、リクエスト時のワードを値に、 ```req.params``` に追加される。
 
 ```js
 const mixer = require('mixer')
@@ -83,7 +83,7 @@ const app = new mixer(
   
 app.listen(3000)
 
-// GET: http://localhost:3000/mix/apple へのレスポンス
+// GET: http://localhost:3000/mix/apple へのレスポンス
 // {"fruit":"apple"}
 ```
 
@@ -113,7 +113,7 @@ app.listen(3000)
 ## mix modules
 
 - [mixer](https://github.com/imatomix/mixer) : サーバー処理
-- [mix-serve](https://github.com/imatomix/mix-serve) : 静的ファイルのサーブ
+- [mix-static](https://github.com/imatomix/mix-static) : 静的ファイルのサーブ
 - [mix-favicon](https://github.com/imatomix/mix-favicon) : faviconのサーブ
 - mix-cors : cors処理（作ろうかな）
 - mix-csrf : csrf処理（作ろうかな）
